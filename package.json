@@ -1,0 +1,47 @@
+{
+  "name": "workshop-testing",
+  "version": "1.0.0",
+  "description": "Skeleton for the React testing workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register,css:./test/support/css-null-compiler --require ./test/support/browser.js --recursive ./test/src",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgarciavisual/workshop-react-testing.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgarciavisual/workshop-react-testing/issues"
+  },
+  "homepage": "https://github.com/mgarciavisual/workshop-react-testing#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.3.0",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.7.0",
+    "react-addons-test-utils": "^15.1.0",
+    "sass-loader": "^3.2.0",
+    "sinon": "^1.17.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  }
+}

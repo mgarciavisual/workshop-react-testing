@@ -1,0 +1,34 @@
+$img-width: 200px;
+$img-height: 150px;
+
+.wheel {
+	position: relative;
+	margin: 5em auto 4em;
+	width: $img-width;
+	height: $img-height;
+	perspective: 1500px;
+
+	.rotator {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		will-change: transform;
+		transform-style: preserve-3d;
+		transition-timing-function: linear;
+		transition-duration: 350ms;
+		transition-delay: 0s;
+		
+		figure {
+			position: absolute;
+			margin: 0;
+			width: $img-width;
+			height: $img-height;
+			border: 1px solid black;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
